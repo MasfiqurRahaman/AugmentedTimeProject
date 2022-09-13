@@ -313,14 +313,15 @@ void init (char* argv[])
 
 int main (int argc, char* argv[])
 {
+    printf("Check 0.\n");
     char *filename = (char *)"dump.log";
-
+    printf("Check 1.\n");
     if(argc < 3)
     {    
         printf("\nUSAGE: peer myID <peer1> [<peer2> .......]\n");
         exit(1);
     }
-
+    printf("Check 2.\n");
     g_logfile = fopen("events.log", "w");
     printf("trying to open file.\n");
     assert(g_logfile != NULL);
