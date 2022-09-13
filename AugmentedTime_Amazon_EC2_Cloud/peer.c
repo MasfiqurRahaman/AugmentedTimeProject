@@ -323,6 +323,7 @@ int main (int argc, char* argv[])
 
     g_logfile = fopen("events.log", "w");
     assert (g_logfile != NULL);
+    printf("g_logfile is successful in opening file.\n");
 
     //set current peer's ID in myID
     sprintf(g_myID, "%s", argv[1]);
