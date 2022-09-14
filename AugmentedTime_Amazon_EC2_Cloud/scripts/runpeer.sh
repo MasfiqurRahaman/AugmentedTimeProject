@@ -17,7 +17,7 @@ for i in `cat ips.txt`
 do
     if [ $myip != $i ]
     then
-        command="$command $i:12345"
+        command="$command $i:12450"
     fi
 done
 echo "$command 1> nohup.out 2> nohup.out &" >> command.sh

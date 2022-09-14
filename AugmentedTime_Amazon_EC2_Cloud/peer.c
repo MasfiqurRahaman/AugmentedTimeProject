@@ -361,7 +361,7 @@ int main (int argc, char* argv[])
     memset(&servAddr, 0 , sizeof(servAddr));        // Zero out structure
     servAddr.sin_family = AF_INET;                  // IPv4 address family
     servAddr.sin_addr.s_addr = htonl(INADDR_ANY);   // Any incoming interface
-    servAddr.sin_port = htons(12345);               // Local port
+    servAddr.sin_port = htons(12450);               // Local port
 
     // Bind to the local address
     if(bind(servSock, (struct sockaddr*) &servAddr, sizeof(servAddr)) < 0)
